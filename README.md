@@ -28,10 +28,6 @@ java -jar target/cadastro-profissionais.jar
 
 Após a execução dos comandos, a API estará disponível em `http://localhost:8080`.
 
-## 📕 Documentação
-
-A documentação Swagger se encontra no endpoint `/docs`. O arquivo `cadastro-profissionais.json` é uma coleção de requisições da API que pode ser importada no Insomnia.
-
 ## 🐋 Execução em ambiente Docker
 
 Para facilitar a execução da aplicação, foram criados os arquivos `docker-compose.yaml` e `Dockerfile` que realizam o deploy tanto da API quanto do banco de dados, bastando que se execute o comando abaixo no diretório raiz do projeto para iniciá-lo:
@@ -41,6 +37,10 @@ docker-compose up -d
 ```
 
 Após a execução do comando, a API estará disponível em `http://localhost:8080`.
+
+## 📕 Documentação
+
+A documentação Swagger se encontra no endpoint `/docs`. O arquivo `cadastro-profissionais.json` é uma coleção de requisições da API que pode ser importada no Insomnia.
 
 ## 🏛️ Arquitetura
 
