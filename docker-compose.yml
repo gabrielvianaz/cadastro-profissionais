@@ -1,0 +1,23 @@
+version: "3.4"
+
+services:
+  app:
+    build: .
+    image: cadastro-profissionais
+    container_name: cadastro-profissionais
+    environment:
+      DB_URL: jdbc:postgresql://cadastro-profissionais-db:5432/postgres
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
+    ports:
+      - 8080:8080
+    depends_on:
+      - db
+
+  db:
+    image: postgres
+    container_name: cadastro-profissionais-db
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
